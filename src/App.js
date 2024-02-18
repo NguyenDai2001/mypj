@@ -1,17 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+
+  let link = "https://reactjs.org";
+  let ob = { name: "nguyen dai", age: 10 }
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {JSON.stringify(ob)}
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href={link}
           target="_blank"
           rel="noopener noreferrer"
         >
